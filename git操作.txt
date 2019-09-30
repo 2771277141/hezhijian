@@ -1,0 +1,36 @@
+ls     查看目录内文件
+touch text.txt  创建文件
+
+
+git branch -a  查看分支
+绿色为本地分支   红色为远程分支
+
+git remote -v  查看远程仓库
+git remote rm origin     删除远程仓库地址
+git remote add origin [url]  添加远程仓库地址
+
+
+git checkout -b dev    创建分支     ‘dev’为分支名
+
+git push origin dev   提交分支到远程仓库
+如果没有创建远程分支则   git push --set-upstream origin dev
+
+
+git checkout master     切换分支   ‘master'  为分支名
+git merge dev    合并分支  ‘ dev ’要与当前分支合并的分支
+
+git branch  -D  dev   删除本地分支    
+git push origin :dev     删除远程仓库分支   ：为空的意思
+
+git log    查看提交记录
+git reflog     查看提交记录
+b4272da HEAD@{7}: commit: dev上的功能开发
+git reset --hard b4272da    回退版本
+git reset --hard HEAD@{7}    回退版本
+
+git reset --hard  head^  回到上一个版本
+
+
+
+
+
