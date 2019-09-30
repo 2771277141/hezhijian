@@ -5,7 +5,12 @@ touch text.txt  创建文件
 git branch -a  查看分支
 绿色为本地分支   红色为远程分支
 
+
+
 git remote -v  查看远程仓库
+git remote set-url origin https://github.com/2771277141/xingvue.git  
+设置远程仓库地址
+
 git remote rm origin     删除远程仓库地址
 git remote add origin [url]  添加远程仓库地址
 
@@ -29,6 +34,15 @@ git reset --hard b4272da    回退版本
 git reset --hard HEAD@{7}    回退版本
 
 git reset --hard  head^  回到上一个版本
+
+
+
+
+
+git pull && git add . &&  git commit -m 'asdf' && git push
+
+
+
 
 
 
