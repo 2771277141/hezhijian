@@ -1,0 +1,48 @@
+packge.json    项目说明
+router.js   路由目录
+store.js   公共调用部分，组件状态管理（vuex）
+
+
+store运用
+
+state:{
+   count:0
+}，
+mutations: {
+     jiayi(){
+       this.state.count++
+     }
+},
+
+
+其它页面调用
+import store from '@/store'
+
+调用参数
+msg:store.state.count
+调用方法
+add(){
+    store.commit('jiayi');
+}
+
+
+
+
+
+
+
+监听数据变化
+watch:{
+    'a':function(val,oldval){
+
+     }	
+}
+方法写这里面，
+methods:{
+}
+
+加载完后调用
+mounted() {
+      window.vue=this;
+},
+

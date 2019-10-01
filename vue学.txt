@@ -1,54 +1,31 @@
 安装cnpm
 https://npm.taobao.org/
 
- npm install -g cnpm --registry=https://registry.npm.taobao.org
+npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 
-一。安装vue
+检查版本
+node -v   
+npm -v
+vue --version
 
-1.全局安装 vue-cli
-cnpm install -g vue-cli
 
-可输入 vue检查是否安装\
+全局安装 vue-cli
+npm install -g @vue/cli
 
-2.创建一个基于webpack模板的新项目
-vue init webpack my-project
 
-3.安装依赖
-cd my-paroject
+创建项目
+vue create hello       hello 为项目名
 
--》 Project description  项目描述     Author 作者是谁   
+Project description  项目描述     Author 作者是谁   
 Use ESLint to lint your code?    是否启用ESLint 一个语法检查工具
 
-npm install
-
-运行
-npm run dev
+vue ui  vue界面
 
 
 
-二。运用vue
-
-监听数据变化
-watch:{
-    'a':function(val,oldval){
-
-     }	
-}
-方法写这里面，
-methods:{
-}
-
-加载完后调用
-  mounted() {
-      window.vue=this;
-   },
-
-
-
-3.调试
+调试
 debugger
-
 window.vue=this;
 
 
