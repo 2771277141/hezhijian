@@ -4,30 +4,44 @@ store.js   公共调用部分，组件状态管理（vuex）
 
 
 store运用
-
-state:{
-   count:0
-}，
-mutations: {
-     jiayi(){
-       this.state.count++
+ state: {
+   lists:[]
+  },
+  mutations: {
+     additem(state,value){
+	state.lists.push(value);
      }
-},
+  },
 
 
 其它页面调用
 import store from '@/store'
-
 调用参数
-msg:store.state.count
-调用方法
-add(){
-    store.commit('jiayi');
+name:'list',
+data(){
+	return{
+		msg:store.state.count
+	}
+},
+store,
+computed:{
+	pagelists(){
+		return store.state.lists;
+	}
 }
 
 
+调用方法
+store.commit('additem',{
+	title:this.title,
+	content:this.content
+})
 
 
+
+本地存储
+localStorage.setItem('name',this.nema)
+localStorage.getItem('name')
 
 
 
@@ -36,6 +50,12 @@ watch:{
     'a':function(val,oldval){
 
      }	
+}
+计算属性相当于定义一个会发生变化的date
+computed:{
+	pagelists(){
+		return store.state.lists;
+	}
 }
 方法写这里面，
 methods:{
