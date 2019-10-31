@@ -1,0 +1,18 @@
+1. 从json数组 返回一个数组。
+
+
+let _Row = responseObject.map((key)=>{  return (key.id); })
+
+2. 返回一个新 json数组
+
+
+let _Row2 = responseObject.map((key)=>{ return ({id: key.id, name: key.value}); })
+
+
+
+
+根据数组进行筛选返回数据
+comments   为要筛选的数据
+number  为用以筛选的数组
+
+let filtered = comments.filter(comment => number.indexOf(comment.id) !== -1);

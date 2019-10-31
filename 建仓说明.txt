@@ -1,0 +1,48 @@
+1.gitosis.conf
+
+[group 项目名称]
+members = 计算机名称
+writable = 名称
+
+2.git init   
+
+  touch建文件 
+
+  git remote add origin g@test.heodo.com:项目
+
+  git add .   
+
+  git commit -m 'dd'  
+  
+  git push origin master
+
+
+3.服务器 添加自动更新目录
+
+创立post-receive文件
+
+#!/bin/sh
+git --work-tree=/data/web/deao_heodo_com/public_html checkout -f
+
+
+4.站点目录添加用户权限  chmod -R o+w 文件夹
+
+
+5.git 生成公钥:ssh-keygen -t rsa 
+
+
+6.git log查历史版本
+
+7.git reset --hard 版本号   --------恢复版本号
+
+8.git push -f -u origin master  把修改推到远程服务器
+
+9.git init --bare 建仓名  
+
+
+10.ssh root@baota.zhiwi.cn  'cat >> /home/git/.ssh/authorized_keys' < id_rsa.pub 添加秘钥
+
+11.
+
+
+git reset --hard 0029ab7909bc7bd6894a2d7fcc920d15e100949e
