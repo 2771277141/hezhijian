@@ -8,3 +8,6 @@ ssh-keygen -t rsa -b 4096 -C "2771277141@qq.com"
 
 
 
+ssh-keygen -p
+
+¸ÄÃÜÂë
