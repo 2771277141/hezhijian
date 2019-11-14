@@ -35,6 +35,9 @@ GIT拉取  git clone git@baota.zhiwi.cn:huamei_zhiwi_cn
 6,mysql   复制其他项目的过来
 
 
+chmod -R 777 *
+
+
 
 创建二级域名所在的阿里云
 
@@ -49,8 +52,19 @@ heodo728
 
 
 宝塔
+http://baota.zhiwi.cn:8888/login
 mayuan
 @mayuan123
+122.114.185.143
+@heodo728
+
+
+
+
+hbuider
+1599076351@qq.com   heodo@qq.com
+heodo728
+
 
 
 
