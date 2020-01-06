@@ -66,3 +66,43 @@ mounted() {
       window.vue=this;
 },
 
+
+
+组件传值 子传父
+
+子页面
+this.$emit("getData", this.msg);
+父页面
+getData(data) {
+      this.msg = data;
+}
+
+
+项目运行打包
+由packge.json内的文件决定	
+
+ "scripts": {
+    "serve": "vue-cli-service serve",
+    "h5": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+
+
+运行为  yarn  serve 
+
+
+
+
+
+vue.config.js内的 outputDir值为打包出来的目录
+
+module.exports = {
+  publicPath: './',
+  outputDir: '../ht'
+}
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+判断有没有某个字符串
+ $email = 'user@example.com';
+ $domain = strstr($email, '@');
+ echo $domain;
+ // prints @example.com
+
+strstr() 函数搜索一个字符串在另一个字符串中的第一次出现。
+该函数返回字符串的其余部分（从匹配点）。如果未找到所搜索的字符串，则返回 false。
+
+
+
+进行字符串替换
+$a = "111|222|333";
+print_r(str_replace('|',',',$a)); //把字符串中的‘|’替换成‘,’
+结果：111,222,333
+
+
+转为时间轴
+strtotime（）
+
+
+
+获取字符串长度
+strlen($str2)；
+mb_strlen($str2)； 中文字符串 
+
+
+
+判断是否为数字型 
+if( is_numeric( $num1)){ 
+    echo $num1.'是数字型'; 
+}else{ 
+    echo $num1.'不是数字型'; 
+
+}
+
+数组倒序
+$dingdan['xuqiu']['jilu']=array_reverse($dingdan['xuqiu']['jilu']); 
+
+
+
+

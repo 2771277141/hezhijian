@@ -1,0 +1,14 @@
+
+联合查表插入
+$a=BM("zw_shangcheng_shangpin");
+$b=BM("zw_shangcheng_shangpin_hyid");
+$shijian=SHIJIAN;
+YunSQL("insert into $b(sid,hyid,daorushijian,shanghu) select id,{$_W['huiyuan']['id']},$shijian,shanghu from $a where zhuangtai=1 and shanghu={$_J['shanghu']}");
+		
+
+联合改表
+$a=BM('zw_shangcheng_shangpin');
+$b=BM('zw_shangcheng_shangpin_hyid');
+	
+YunSQL("update  $a a right join $b b on a.id=b.sid set b.jiajia={$_J['jiajia']} where $sql");
+			

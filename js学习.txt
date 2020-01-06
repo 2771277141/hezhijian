@@ -14,5 +14,34 @@ let _Row2 = responseObject.map((key)=>{ return ({id: key.id, name: key.value}); 
 根据数组进行筛选返回数据
 comments   为要筛选的数据
 number  为用以筛选的数组
-
 let filtered = comments.filter(comment => number.indexOf(comment.id) !== -1);
+
+
+
+分割字符串
+str = "2,2,3,5,6"; //这是一字符串
+var strs = new Array(); //定义一数组
+strs = str.split(",");
+
+
+合并数组
+var a=[1,2,3],b=[4,5,6];
+var c=a.concat(b);
+console.log(c);// 1,2,3,4,5,6
+console.log(a);// 1,2,3  不改变本身
+
+
+获取时间轴
+zhixingjieshu=2016-3-3；
+new Date(zhixingjieshu).getTime();
+
+
+跳链接
+window.location.href =‘http://www.baidu.com’
+
+
+
+
+
+
+

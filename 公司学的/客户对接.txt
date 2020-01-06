@@ -52,7 +52,7 @@ https://pay.weixin.qq.com/index.php/core/info
 http 和https
 
 
-      2,后台页面  支付参数 jsAPI  支付授权目录  
+2,后台页面  支付参数 jsAPI  支付授权目录  
 
 
 5  运行 输入 cmd   ping zw.zhiwei.cn   可得到ftp的id
