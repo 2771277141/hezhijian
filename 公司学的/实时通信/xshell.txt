@@ -1,0 +1,16 @@
+1.  cd /data2/wwwroot/zhibo.zhiwi.cn/im.myuan.cn/
+
+2.  ps -ef | grep index.php
+查看正在跑的进程
+root      8621 29277  0 15:23 ?        00:00:00 php index.php
+root      8937  8845  0 15:28 pts/1    00:00:00 grep --color=auto index.php
+root     29276     1  0 Mar30 ?        00:00:40 php index.php
+root     29277 29276  0 Mar30 ?        00:00:00 php index.php
+root     30967 29277  0 11:21 ?        00:00:00 php index.php
+
+
+3.   kill 8621
+停掉进程
+
+4.  php index.php 
+启动进程

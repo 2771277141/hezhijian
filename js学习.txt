@@ -40,6 +40,9 @@ new Date(zhixingjieshu).getTime();
 window.location.href =‘http://www.baidu.com’
 
 
+获取本月最后一天
+new Date(year, month, 0).getDate()；
+
 
 
 
