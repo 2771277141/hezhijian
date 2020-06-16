@@ -88,6 +88,10 @@ getData(data) {
   },
 
 
+安装 yarn 
+npm install -g yarn
+
+
 运行为  yarn  serve 
 
 
