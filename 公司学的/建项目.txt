@@ -30,7 +30,7 @@ GIT拉取  git clone git@baota.zhiwi.cn:huamei_zhiwi_cn
 
 不对的地方随便给权限 777
 
-证书配置   ssl 其他证书  去阿里云下载对应的文件解压  服务器类型Nginx
+证书配置   ssl 其他证书  去阿里云下载对应的文件解压放到对应的文件  服务器类型Nginx
 
 6,mysql   复制其他项目的过来
 
