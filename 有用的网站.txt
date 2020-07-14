@@ -2,3 +2,8 @@ https://www.somd5.com/    解密md5
 
 
 https://mpkf.weixin.qq.com/   微信客服端口
+
+
+C:\Windows\System32\drivers\etc\hosts  修改dns
+
+http://tool.chinaz.com/dns?type=1&host=github.com&ip=  查询dns
