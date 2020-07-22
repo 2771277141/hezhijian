@@ -2,5 +2,7 @@ cd 打开
 vi 编辑    进入后按编辑 i      写完后点esc返回后  :wq      q 退出程序 w 保存文件
 
 
+nohup sh test.sh  &     退出后脚本依旧运行
+
 
 
