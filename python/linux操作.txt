@@ -1,0 +1,5 @@
+sudo  su  是当前用户暂时申请root权限
+
+ls 显示文件  ll 显示出的是当前路径下文件列表的详细信息
+
+dpkg -i sogou   安装      apt-get -f  install  安装依赖
