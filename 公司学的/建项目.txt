@@ -26,7 +26,7 @@ GIT拉取  git clone git@baota.zhiwi.cn:huamei_zhiwi_cn
 复制项目后  提交上传  命令1. git add .   2. git commit -m  'sad'  3.git push
 
 5.改配置文件宝塔服务器
-进入其他项目  /gongyong/config.php  复制过去后修改好对应的 域名和服务器密码
+进入其他项目  /gongyong/config.php  复制过去后修改好对应的 数据库和密码
 
 不对的地方随便给权限 777
 
@@ -65,7 +65,9 @@ hbuider
 1599076351@qq.com   heodo@qq.com
 heodo728
 
-
+小程序
+zhiwi3@126.com
+heodo728
 
 
 

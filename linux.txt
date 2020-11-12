@@ -1,3 +1,6 @@
+创建
+touch test.sh
+
 cd 打开         
 vi 编辑    进入后按编辑 i      写完后点esc返回后  :wq      q 退出程序 w 保存文件
 
@@ -5,4 +8,5 @@ vi 编辑    进入后按编辑 i      写完后点esc返回后  :wq      q 退�
 nohup sh test.sh  &     退出后脚本依旧运行
 
 
-
+查看进程       进程名
+ps -ef | grep test.sh
