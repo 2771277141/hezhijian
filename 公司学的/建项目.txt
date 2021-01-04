@@ -56,7 +56,15 @@ http://baota.zhiwi.cn:8888/login
 mayuan
 @mayuan123
 122.114.185.143
-@heodo728
+服务器密码 @heodo728
+
+老王宝塔
+http://120.78.92.52:8866/login
+
+账号：shebilin
+
+
+密码：jky128TF713@
 
 
 
