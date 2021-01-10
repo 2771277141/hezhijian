@@ -1,4 +1,4 @@
-创建
+﻿创建
 touch test.sh
 
 cd 打开         
@@ -10,3 +10,125 @@ nohup sh test.sh  &     退出后脚本依旧运行
 
 查看进程       进程名
 ps -ef | grep test.sh
+
+
+
+脚本编写
+1. test.sh中第一行一定是 “#! /bin/bash” 它代表的意思是，该文件使用的是bash语法。
+’#’表示注释
+
+2.sh -x test.sh       加-x选项来查看这个脚本执行过程
+
+3.date   它的作用就是用来打印当前系统的时间
+例：  date "+%Y-%m-%d %H:%M:%S"
+%Y表示年，%m表示月，%d表示日期，%H表示小时，%M表示分钟，%S表示秒
+例：  date -d "+1 day" "+%Y-%m-%d %H:%M:%S"
+-d 选项,打印n天前或者n天后的日期，当然也可以打印n个月/年前或者后的日期。
+
+4. sleep  程序休眠，后面接数字单位秒
+例：sleep  10
+
+5.  打印时间时，空格要处理，用$()包起来，在脚本中引用变量时需要加上’$’符号
+ a=$(date '+%Y-%m-%d %H:%M:%S')
+echo $a
+
+6.  变量与字符串组合时要用双引号,计算时用$[]
+例： b=111
+echo "ksjdflsdjf $b"
+d=222
+echo $[$b+$d]
+
+7. read 它可以从标准输入获得变量的值，后跟变量名，例 ：
+echo 'shuru d'
+read d
+echo 'shuru b'
+read b
+echo $[$b+$d]
+更加简洁的方式，例 ：
+read -p "输入a" a
+read -p "输入b" b
+echo $[$a+$b]
+
+
+8.shell脚本可以预设变量，shell脚本的预设变量是没有限制的，$0 为脚本名
+例： sh test.sh 11 22
+echo $0 $1 $2
+
+9. if判断的写法可用  ||      &&
+if(($1>90))||(($2==vip));then
+echo '优秀'
+elif(($1>=60));then
+echo '及格'
+else
+echo '不及格'
+fi
+
+还可以使用[ ]写法, if 与‘['之间要有空格，‘=’两边必须也得加空格
+ -lt （小于），-gt （大于），-le （小于等于），-ge （大于等于），-eq （等于），-ne （不等于）。
+if [ "$1" -gt 90 ];then
+echo '优秀'
+elif [ "$1" -le 60 ];then
+echo '及格'
+else
+echo '不及格'
+fi
+
+
+10。 shell 脚本中if还经常判断关于档案属性，比如判断是普通文件还是目录，判断文件是否有读写执行权限等。常用的也就几个选项：
+
+-e ：判断文件或目录是否存在
+
+-d ：判断是不是目录，并是否存在
+
+-f ：判断是否是普通文件，并存在
+
+-r ：判断文档是否有读权限
+
+-w ：判断是否有写权限
+
+-x ：判断是否可执行
+
+使用if判断时，具体格式为： if [ -e test.sh ] ; then echo ok ; fi
+
+
+11.  case  判断
+a=$[$1%2]
+case $a in
+1)
+echo '是'
+;;
+0)
+echo '不是'
+;;
+esac
+
+12. for 循环，seq 产生从某个数到另外一个数之间的所有整数
+a=`seq 1 4`
+for i in $a;do
+echo $i
+done
+
+
+13.  while循环
+a=10
+while [ $a -ge 1 ];do
+echo $a
+a=$[$a-1]
+done
+
+14.  函数
+function sum(){
+        sum=$[$1+$2]
+   echo $sum
+}
+sum 10 20
+
+
+
+
+
+
+
+
+
+

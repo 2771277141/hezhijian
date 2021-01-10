@@ -5,7 +5,8 @@ touch text.txt  创建文件
 git branch -a  查看分支
 绿色为本地分支   红色为远程分支
 
-
+查看当前的本地分支与远程分支的关联关系
+git branch -vv
 
 git remote -v  查看远程仓库
 git remote set-url origin https://github.com/2771277141/xingvue.git  
@@ -40,6 +41,10 @@ git reset --hard  head^  回到上一个版本
 
 
 git pull && git add . &&  git commit -m 'asdf' && git push
+
+
+
+
 
 
 

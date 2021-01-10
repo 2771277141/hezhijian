@@ -1,0 +1,17 @@
+1.创建+切换分支 
+git checkout -b add_orderdesc
+
+2.查看当前的本地分支与远程分支的关联关系
+git branch -vv
+
+4.把本地分支与远程origin的分支进行关联处理(通过 --set-upstream-to 命令)
+git branch --set-upstream-to=origin/add_orderdesc
+
+
+前几步应该就成了，不行的话加上第3步
+
+
+
+3.将本地新建分支push到自己的本地远程origin上，因为只在本地创建了一个新的分支，远程    origin 上还没有该分支
+git push origin add_orderdesc
+
