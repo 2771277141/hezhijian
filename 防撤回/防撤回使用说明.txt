@@ -1,0 +1,10 @@
+当前目录应含有以下文件
+
+- RevokeMsgPatcher.exe                 PC版微信/QQ/TIM防撤回补丁
+- RevokeMsgPatcher.MultiInstance.exe   一个通用的微信多开工具
+
+PC版微信/QQ/TIM防撤回补丁使用说明：
+https://github.com/huiyadanli/RevokeMsgPatcher
+
+一个通用的微信多开工具使用说明
+https://github.com/huiyadanli/RevokeMsgPatcher/tree/master/RevokeMsgPatcher.MultiInstance
