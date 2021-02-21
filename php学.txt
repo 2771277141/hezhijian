@@ -41,6 +41,8 @@ $dingdan['xuqiu']['jilu']=array_reverse($dingdan['xuqiu']['jilu']);
 $cmf_arr = array_column($lie,'paixu');
 array_multisort($cmf_arr, SORT_ASC, $lie);
 
+ËÄÉáÎåÈë
+$sz=rount($shuzi,2);
 
 
 
